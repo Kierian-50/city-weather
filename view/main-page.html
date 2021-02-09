@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style/style-nav.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/weather-icons/2.0.9/css/weather-icons-wind.min.css">
+    <script type="text/javascript" src="../js/main-activity.js"></script>
+    <title>La météo de votre ville</title>
+</head>
+<body>
+    <ul class="main-nav">
+        <li class="main-item"><a class="main-ref" href="main-page.html">Home</a></li>
+        <li class="main-item"><a class="main-ref" href="#">News</a></li>
+        <li class="main-item"><a class="main-ref" href="#">Contact</a></li>
+        <li class="main-item"><a class="main-ref" href="#">About</a></li>
+    </ul>
+    <input type="text" id="city" name="city" title="Nom de la ville" placeholder="Nom de la ville">
+    <button type="button" class="button" onclick="callApi()" style="vertical-align:middle"><span>Valider </span></button>
+
+    <div>
+        <div class="city-name" name="city-name" id="city-name">-</div>
+        <div class="date" name="date" id="date">-</div>
+        <div class="weather-desc" id="weather-desc">-</div>
+        <div class="model-inline" id="weather-icon">-</div>
+        <div class="model-inline" id="temperature">- °C</div>
+        <div class="model-inline" id="wind-direction">-</div>
+        <div class="model-inline">
+            <div class="model-info" id="precipitation">- HPa</div>
+            <div class="model-info" id="humidity">- %</div>
+            <div class="model-info" id="wind-speed">- km/h</div>
+        </div>
+    </div>
+
+    <div class="footer-basic">
+        <footer>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/kierian-tirlemont-4a6b84197/">
+                    <i class="icon ion-social-linkedin"></i>
+                </a>
+                <a href="https://github.com/Kierian-50">
+                    <i class="icon ion-social-github"></i>
+                </a>
+            </div>
+            <p class="copyright">Kierian Tirlemont © 2021</p>
+        </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
